@@ -806,7 +806,7 @@ async function startMic(){
 
       }else{
 
-        const threshold = ambient + 0.05;
+        const threshold = ambient + 0.10;
 
         if(
           rms > threshold &&
@@ -839,7 +839,7 @@ async function startMic(){
 startMic();
 function glitterExplosion(){
 
-  for(let i=0;i<50;i++){
+  for(let i=0;i<150;i++){
 
     const g = document.createElement("div");
 
