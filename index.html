@@ -763,7 +763,7 @@ async function startMic(){
 
     const analyser = audioContext.createAnalyser();
 
-    analyser.fftSize = 1050;
+    analyser.fftSize = 1024;
 
     mic.connect(analyser);
 
@@ -839,7 +839,7 @@ async function startMic(){
 startMic();
 function glitterExplosion(){
 
-  for(let i=0;i<150;i++){
+  for(let i=0;i<250;i++){
 
     const g = document.createElement("div");
 
