@@ -795,7 +795,7 @@ async function startMic(){
         ambient += rms;
         samples++;
 
-        if(samples >= 50){
+        if(samples >= 60){
 
           ambient /= samples;
           calibrated = true;
