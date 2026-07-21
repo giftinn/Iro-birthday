@@ -763,7 +763,7 @@ async function startMic(){
 
     const analyser = audioContext.createAnalyser();
 
-    analyser.fftSize = 1024;
+    analyser.fftSize = 2000;
 
     mic.connect(analyser);
 
@@ -795,7 +795,7 @@ async function startMic(){
         ambient += rms;
         samples++;
 
-        if(samples >= 60){
+        if(samples >= 50){
 
           ambient /= samples;
           calibrated = true;
